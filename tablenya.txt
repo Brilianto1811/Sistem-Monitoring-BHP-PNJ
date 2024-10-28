@@ -1,0 +1,182 @@
+tbl_gedung
+	kode_gedung
+    nama_gedung
+    timestamp
+
+tbl_gudang
+	kode_gudang
+    kode_gedung
+    nama_gudang
+    timestamp
+
+tbl_blok
+	kode_blok
+    kode_gedung
+    kode_gudang
+    nama_blok
+    timestamp
+
+tbl_lokasi
+	kode_lokasi
+    kode_gedung
+    kode_gudang
+    kode_blok
+    nama_lokasi
+    timestamp
+-------
+tbl_jurusan
+	kode_jurusan
+    nama_jurusan
+    timestamp
+
+tbl_prodi
+	kode_prodi
+    kode_jurusan
+    nama_prodi
+    timestamp
+
+tbl_kelas
+	kode_kelas
+    kode_jurusan
+    kode_prodi
+    nama_kelas
+    timestamp
+
+tbl_mahasiswa
+	id_mahasiswa
+    kode_jurusan
+    kode_prodi
+    kode_kelas
+    nim
+    password
+    nama_mahasiswa
+    telp
+    alamat
+    email
+    user_create
+    user_update
+    timestamp
+---------------
+tbl_login
+    id_login
+    userid
+    password
+    nip
+    nama_user
+    level
+    status_user
+    user_create
+    user_update
+    timestamp
+----------
+tbl_barang
+	id_barang
+    kode_barang
+    nama_barang
+    unit
+    stok_awal
+    stok_sebelumnya
+    stok_sekarang
+    lokasi_create
+    lokasi_sebelumnya
+    lokasi_sekarang
+    user_create
+    user_update
+    status # aktif/nonaktif
+    uid
+    timestamp
+
+tbl_trx_barang
+    idtrx
+    uid
+    tgl_masuk
+    tgl_keluar
+    tipetrx # IN/OUT
+    ket
+    userid
+    timestamp
+
+tbl_trx_barang_detail
+    idtrx
+    norut
+    id_barang
+    kode_barang
+    nama_barang
+    stok
+
+tbl_trx_barang_pindah
+    idtrx
+    id_barang
+    kode_barang
+    nama_barang
+    lokasi_sebelumnya
+    lokasi_sekarang
+    ket
+    userid
+    timestamp
+
+tbl_trx_barang_pindah_detail
+    idtrx
+    id_barang
+    kode_barang
+    nama_barang
+    lokasi_sebelumnya_detail
+    lokasi_sekarang_detail
+
+tbl_permintaan_barang
+    id_permintaan
+    kode_permintaan
+    noid # nim/nip/nidn/nik
+    nama
+    kode_jurusan
+    kode_prodi
+    kode_kelas
+    informasi
+    status
+    userid
+    timestamp
+
+tbl_permintaan_barang_detail
+    id_permintaan
+    kode_permintaan
+    id_barang
+    kode_barang
+    nama_barang
+    qty
+    ket
+
+===============================
+php artisan make:migration create_tbl_gedung
+php artisan make:migration create_tbl_gudang
+php artisan make:migration create_tbl_blok
+php artisan make:migration create_tbl_lokasi
+php artisan make:migration create_tbl_jurusan
+php artisan make:migration create_tbl_prodi
+php artisan make:migration create_tbl_kelas
+php artisan make:migration create_tbl_mahasiswa
+php artisan make:migration create_tbl_login
+php artisan make:migration create_tbl_barang
+php artisan make:migration create_tbl_trx_barang
+php artisan make:migration create_tbl_trx_barang_detail
+php artisan make:migration create_tbl_trx_barang_pindah
+php artisan make:migration create_tbl_trx_barang_pindah_detail
+php artisan make:migration create_tbl_permintaan_barang
+php artisan make:migration create_tbl_permintaan_barang_detail
+
+
+php artisan make:model MGedung
+php artisan make:model MGudang
+php artisan make:model MBlok
+php artisan make:model MLokasi
+php artisan make:model MJurusan
+php artisan make:model MProdi
+php artisan make:model MKelas
+php artisan make:model MMahasiswa
+php artisan make:model MLogin
+php artisan make:model MBarang
+php artisan make:model MTrxBarang
+php artisan make:model MTrxBarangDetail
+php artisan make:model MTrxBarangPindah
+php artisan make:model MTrxBarangPindahDetail
+php artisan make:model MPermintaanBarang
+php artisan make:model MPermintaanBarangDetail

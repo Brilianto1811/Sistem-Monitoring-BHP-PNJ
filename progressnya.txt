@@ -1,0 +1,410 @@
+Landing Page [DONE]
+Login
+	- login karyawan [DONE]
+	- login mahasiswa [DONE]
+    - tinggal middlerware [pending setelah selesai semua]
+
+--- BARU TAMPILAN DOANG --
+Gedung
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Gudang
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Blok
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Lokasi
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Jurusan
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Prodi
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Kelas
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+Mahasiswa
+	- index
+    - form-create
+    - form-edit
+    - form-detail
+
+Barang
+    - index
+
+
+----- ======================== -----
+----- NEXT SUMMARY 22 Mei 2023 -----
+----- ======================== -----
+
+Gedung [DONE]
+	- index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [DONE]
+        => proses edit [DONE]
+    - form-detail
+        => proses show [DONE]
+Gudang
+	- index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [DONE]
+Blok
+	- index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [DONE]
+Lokasi
+	- index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [DONE]
+
+Jurusan
+	- index
+        => proses show [DONE]
+        => proses delete [NOT YET]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [NOT YET]
+Prodi
+	- index
+        => proses show [DONE]
+        => proses delete [NOT YET]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [NOT YET]
+Kelas
+	- index
+        => proses show [DONE]
+        => proses delete [NOT YET]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [NOT YET]
+Mahasiswa
+	- index
+        => proses show [NOT YET]
+        => proses delete [NOT YET]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [NOT YET]
+        => proses edit [NOT YET]
+    - form-detail
+        => proses show [NOT YET]
+
+Barang [DONE]
+    - index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [DONE]
+        => proses edit [DONE]
+    - form-detail
+        => proses show [DONE]
+Userprofile [DONE]
+    - index
+        => proses show [DONE]
+        => proses delete [DONE]
+    - form-create
+        => proses create [DONE]
+    - form-edit
+        => proses show [DONE]
+        => proses edit [DONE]
+    - form-detail
+        => proses show [DONE]
+
+STOK_IN
+    - index
+        => proses show [DONE]
+    - form-create
+        => proses create [DONE]
+STOK_OUT
+    - index
+        => proses show [DONE]
+    - form-create
+        => proses create [DONE]
+STOK_MOVING
+    - index
+        => proses show [DONE]
+    - form-create
+        => proses create [DONE]
+TERIMA_PERMINTAAN
+    - index
+
+--------------------------------
+
+Alur Proses yang harus dicoba:
+1. Login Admin
+- username & password salah
+- username & password bener
+
+2. Master Lokasi
+- Gedung
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Gudang
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Blok
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Lokasi
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+
+3. Master Pengguna
+- Jurusan
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Prodi
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Kelas
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+- Mahasiswa
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+  * LOGIN
+    => setelah CREATE, coba lakuin login sebagai mahasiswa, dari data yang dicreate tadi, berhasil login gak?
+
+4. Userprofile
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+  * LOGIN
+    => setelah CREATE, coba lakuin login sebagai karyawan, dari data yang dicreate tadi, berhasil login gak?
+
+5. Barang
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => validasi cuman isi beberapa inputan (langsung klik tombol save dengan beberapa inputan yang keisi)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form EDIT
+    => pastiin gak ada inputan yang kosong & datanya keisi sesuai dengan data yang diklik?
+    => ganti beberapa inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => ganti semua inputan langsung klik tombol save (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * DELETE
+    => pastiin popupnya konfirmasi tampil
+    => pastiin proses delete berhasil
+
+6. STOK IN
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => coba case urutan barang diacak, dengan stok beda beda; ex: BarangA 5, BarangB 2, BarangA 1, BarangA 2 BarangB 3 (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+    => pastiin data urutan barang yang acak jadi ketotal; ex: BarangA 8, BarangB 5
+  * Menu Barang
+    => pastiin stoknya BERTAMBAH & link trxnya muncul
+
+6. STOK OUT
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => coba case urutan barang diacak, dengan stok beda beda; ex: BarangA 5, BarangB 2, BarangA 1, BarangA 2 BarangB 3 (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+    => pastiin data urutan barang yang acak jadi ketotal; ex: BarangA 8, BarangB 5
+  * Menu Barang
+    => pastiin stoknya BERKURANG & link trxnya muncul
+
+7. MOVING
+  * Data yang tampil di index
+  * Form CREATE
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => coba case urutan barang diacak, dengan lokasi beda beda; (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+  * Menu Barang
+    => pastiin field lokasinya berpindah & link trxnya muncul
+
+8. Permintaan Barang
+  * Data yang tampil di index
+  * Form CREATE (pastiin udah login sebagai mahassiwa)
+    => validasi inputan form (langsung klik tombol save dengan inputan kosong)
+    => isi semua inputan (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+    => coba case urutan barang diacak, dengan stok beda beda; ex: BarangA 5, BarangB 2, BarangA 1, BarangA 2 BarangB 3 (cek prosesnya berhasil?, redirectnya bener?, ada pesan alert?)
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+    => pastiin data urutan barang yang acak jadi ketotal; ex: BarangA 8, BarangB 5
+
+9. Terima Permintaan Barang
+  * Data yang tampil di index
+  * Form CREATE (pastiin udah login sebagai karyawan)
+    => coba tolak, pastiin stok di menu barang TIDAK BERKURANG & status ditolak (di admin & di mahasiswa)
+    => coba terima, pastiin stok di menu barang BERKURANG & status diterima (di admin & di mahasiswa)
+        -> MenuBarang link trxnya muncul,
+            -> pas diklik link trxnya tampil ke detail stok out,
+                -> muncul detail dengan link REQUEST MAHASISWA dan detail dari REQUEST
+  * Form DETAIL
+    => pastiin data yang tampil bener dengan yang diklik & data yang tampil sesuai
+
